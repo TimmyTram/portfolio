@@ -5,11 +5,16 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #2f3a45;
-  height: 100vh;
+  background-color: #2f3a45;;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Might have to change this later */
+.app {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .container {
@@ -44,6 +49,10 @@ body {
   text-align: center;
 }
 
+.headshot-container {
+  padding: 20px;
+}
+
 .headshot {
   object-fit: cover;
   width: 300px;
@@ -74,11 +83,10 @@ body {
     padding: 10px;
   }
 
-  /* .headshot {
-    width: 120px;
-    height: 120px;
-    padding: 20px;
-  } */
+  .headshot {
+    width: 200px;
+    height: 200px;
+  }
 
   .flex-col-container {
     flex-direction: column;
@@ -97,11 +105,10 @@ body {
     padding: 15px;
   }
 
-  /* .headshot {
-    width: 130px;
-    height: 130px;
-    padding: 30px;
-  } */
+  .headshot {
+    width: 200px;
+    height: 200px;
+  }
 
   .flex-col-container {
     gap: 2rem;
@@ -118,11 +125,10 @@ body {
     padding: 15px;
   }
 
-  /* .headshot {
-    width: 140px;
-    height: 140px;
-    padding: 35px;
-  } */
+  .headshot {
+    width: 200px;
+    height: 200px;
+  }
 
   .flex-col-container {
     gap: 3rem;

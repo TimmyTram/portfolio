@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from 'react';
+import './techIcon.css';
 
 interface TechIconProps {
-    name: string;
+    filename: string;
+    displayname?: string;
     size?: string | number;
 }
 
-const TechIcon = ({ name, size = '50px' }: TechIconProps) => {
+const TechIcon = ({ filename, displayname, size = '55px' }: TechIconProps) => {
     const [IconComponent, setIconComponent] = useState<React.ReactNode | null>(null);
 
+    // dynamically import icon based on name prop which gets it from the asset folder
     useEffect(() => {
         const loadIcon = async () => {
             try {
-                // Dynamically import the icon based on the name
-                const iconModule = await import(`../../assets/techIcons/${name}.svg?react`);
+                const iconModule = await import(`../../assets/techIcons/${filename}.svg?react`);
                 setIconComponent(<iconModule.default width={size} height={size} />);
             } catch (error) {
                 console.error("Icon not found:", error);
@@ -24,8 +26,13 @@ const TechIcon = ({ name, size = '50px' }: TechIconProps) => {
     }, [name, size]);
 
     return (
-        <div style={{ width: size, height: size }}>
-            {IconComponent}
+        <div>
+            <div className="rounded" style={{ width: size, height: size }}>
+                {IconComponent}
+            </div>
+            <p className="display-text">
+                {displayname}
+            </p>
         </div>
     );
 };

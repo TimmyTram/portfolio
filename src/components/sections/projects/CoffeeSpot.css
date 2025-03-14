@@ -1,0 +1,39 @@
+.demo-video {
+    width: 800px;
+    height: 600px;
+}
+
+.text-description {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    white-space: pre-line;
+    font-size: 1.5rem;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* Small screens */
+@media (max-width: 640px) {
+    .demo-video {
+        max-width: 90%;
+        max-height: 300px;  /* Adjust height for small screens */
+    }
+}
+
+/* Medium screens */
+@media (max-width: 768px) {
+    .demo-video {
+        max-width: 90%;
+        max-height: 350px;  /* Adjust height for medium screens */
+    }
+}
+
+/* Large screens */
+@media (max-width: 1024px) {
+    .demo-video {
+        max-width: 90%;
+        max-height: 400px;  /* Default height for large screens */
+    }
+}
