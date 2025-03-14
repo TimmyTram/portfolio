@@ -35,7 +35,7 @@ const CoffeeSpot = () => {
                 </Button>
             </div>
 
-            <div>
+            <div className="tech-stack-container">
                 <h2 className="heading-bubble">Technologies Used:</h2>
                 <div className="flex-row-container">
                     <TechIcon filename="typescript" displayname="TypeScript" size={20} fontSize={15} />
@@ -55,31 +55,34 @@ const CoffeeSpot = () => {
                     <p className="text-description">
                         Coffee Spot is an intuitive and user-friendly application designed to help users
                         discover the ideal third place tailored to their specific needs. By using user input and
-                        location data, Coffee Spot will allow users to filter spaces based on Wi-Fi quality and animal friendliness. 
+                        location data, Coffee Spot will allow users to filter spaces based on Wi-Fi quality and animal friendliness.
                         The application will deliver recommendations, helping users find coffee shops, libraries, and other suitable
                         locations. It also integrates reviews from our users and will update space availability to
                         help users make informed choices
                     </p>
 
                     <h2 className="heading-bubble">My Role on the Team:</h2>
-                    <p className="text-description">
-                        My assigned role in CoffeeSpot was <span className="text-bold">Backend Lead</span>.
-                        My Responsbilites included:
-                    </p>
-                    <ul className="features">
-                        <li>Designing and Implementing the backend architecture using Prisma and MongoDB.</li>
-                        <li>Creating the API routes and React Hooks for the Frontend team to use.</li>
-                        <li>Handling User Authentication and Authorization using next-auth</li>
-                        <li>Implementing the Admin Dashboard.</li>
-                        <li>Helping debug any deployment issues on Vercel or Mongodb Atlas.</li>
-                        <li>Researching Image Storage Solutions such as AWS S3 and Vercel Blobs.</li>
-                        <li>Developing Prototypes to show Proof of Concept for new features.</li>
-                        <li>Code Reviews and Pull Request Approvals.</li>
-                        <li>Mentoring Backend members on how to use the API or write NextJS APIs routes.</li>
-                        <li>Conducting Integration Tests along with Scrum Master and Backend Members.</li>
-                        <li>Creating documentation for Backend API and React Hooks.</li>
-                        <li>Helping develop components Frontend team needed help with.</li>
-                    </ul>
+                    <div className="role-and-responsibilities">
+                        <p>
+                            My assigned role in CoffeeSpot was <span className="text-bold">Backend Lead</span>.
+                            My Responsbilites included:
+                        </p>
+                        <ul>
+                            <li>Designing and Implementing the backend architecture using Prisma and MongoDB.</li>
+                            <li>Creating the API routes and React Hooks for the Frontend team to use.</li>
+                            <li>Handling User Authentication and Authorization using next-auth</li>
+                            <li>Implementing the Admin Dashboard.</li>
+                            <li>Helping debug any deployment issues on Vercel or Mongodb Atlas.</li>
+                            <li>Researching Image Storage Solutions such as AWS S3 and Vercel Blobs.</li>
+                            <li>Developing Prototypes to show Proof of Concept for new features.</li>
+                            <li>Code Reviews and Pull Request Approvals.</li>
+                            <li>Mentoring Backend members on how to use the API or write NextJS APIs routes.</li>
+                            <li>Conducting Integration Tests along with Scrum Master and Backend Members.</li>
+                            <li>Creating documentation for Backend API and React Hooks.</li>
+                            <li>Helping develop components Frontend team needed help with.</li>
+                        </ul>
+                    </div>
+
                     <h2 className="heading-bubble">Features:</h2>
                     <ul className="features">
                         <li><span className="text-bold">Responsive Design:</span> Layout is optimized to adjust seamlessly across a multitude of screen sizes.</li>

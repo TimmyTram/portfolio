@@ -41,6 +41,25 @@
     margin-bottom: 2rem;
 }
 
+.role-and-responsibilities {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 1.5rem;
+    background: linear-gradient(to top right, #333333, #1a1a1a);
+    border-radius: 20px;
+    border: solid 5px #c3976f;
+}
+
+.role-and-responsibilities > ul {
+    text-align: left;
+}
+
+.tech-stack-container {
+    width: 100%;
+}
+
 
 /* Small screens */
 @media (max-width: 640px) {

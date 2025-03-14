@@ -5,13 +5,16 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-image: url('bg.jpg');
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Might have to change this later */
 .app {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -23,7 +26,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #11264e;
+  /* Slight Opaque light color from bottom left to dark color top right*/
+  background: linear-gradient(to top right, rgba(34, 68, 136, 0.8), rgba(17, 38, 78, 0.8));
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
   flex-wrap: wrap;
   border: 5px solid #c3976f;

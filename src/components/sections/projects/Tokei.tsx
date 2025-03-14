@@ -41,7 +41,7 @@ const Tokei = () => {
                     Tokei is a full-stack web application that provides users with Anime and Manga recommendations using the Jikan V4 API.
                 </p>
 
-                <div>
+                <div className='tech-stack-container'>
                     <h2 className="heading-bubble">Technologies Used:</h2>
                     <div className="flex-row-container">
                         <TechIcon filename="typescript" displayname="TypeScript" size={20} fontSize={15} />
