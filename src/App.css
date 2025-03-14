@@ -1,42 +1,131 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2f3a45;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #3a4856;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+  flex-wrap: wrap;
+}
+
+.flex-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.flex-col-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.headshot {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-color: #75b7ea;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.introduction {
+  border: solid 5px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #75b7ea;
+}
+
+/* Responsive Breakpoints */
+
+@media (max-width: 640px) { /* Small screens */
+  body {
+    flex-direction: column;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* .headshot {
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+  } */
+
+  .flex-col-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .flex-row-container {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 768px) { /* Medium screens */
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  /* .headshot {
+    width: 130px;
+    height: 130px;
+    padding: 30px;
+  } */
+
+  .flex-col-container {
+    gap: 2rem;
+  }
+
+  .flex-row-container {
+    gap: 2rem; /* Slightly reduced gap for medium screens */
   }
 }
 
-.card {
-  padding: 2em;
-}
+@media (max-width: 1024px) { /* Large screens */
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
 
-.read-the-docs {
-  color: #888;
+  /* .headshot {
+    width: 140px;
+    height: 140px;
+    padding: 35px;
+  } */
+
+  .flex-col-container {
+    gap: 3rem;
+  }
+
+  .flex-row-container {
+    gap: 3rem;
+  }
 }
