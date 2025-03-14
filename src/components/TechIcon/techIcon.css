@@ -1,11 +1,11 @@
 .rounded {
     border-radius: 50%;          
-    border: 3px solid white;     
+    border: 5px solid #c3976f;     
     padding: 20px;           
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #75b7ea;    
+    background: linear-gradient(to top right, #333333, #1a1a1a); 
     overflow: hidden;
 }
 
@@ -16,7 +16,6 @@
 }
 
 .display-text {
-    color: white;
     font-weight: bold;
     text-align: center;
 }

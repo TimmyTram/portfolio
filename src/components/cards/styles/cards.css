@@ -6,10 +6,11 @@
     width: 100%;
     max-width: 350px;
     height: 350px;
-    border: 5px solid #75b7ea;
+    border: 5px solid #c3976f;
     border-radius: 1rem;
     padding-bottom: 1rem;
     cursor: pointer;
+    background: linear-gradient(to top right, #333333, #1a1a1a);
 }
 
 .card img {
@@ -18,7 +19,7 @@
     object-fit: cover;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    border-bottom: 5px solid #75b7ea;
+    border-bottom: 5px solid #c3976f;
 }
 
 .card-content {

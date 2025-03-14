@@ -42,7 +42,7 @@ const Tokei = () => {
                 </p>
 
                 <div>
-                    <h2>Technologies Used:</h2>
+                    <h2 className="heading-bubble">Technologies Used:</h2>
                     <div className="flex-row-container">
                         <TechIcon filename="typescript" displayname="TypeScript" size={20} fontSize={15} />
                         <TechIcon filename="nextjs" displayname="Next.js" size={20} fontSize={15} />
@@ -55,20 +55,20 @@ const Tokei = () => {
                 </div>
 
                 <div>
-                    <h2>Features:</h2>
+                    <h2 className="heading-bubble">Features:</h2>
                     <ul className='features'>
                         <li><span className="text-bold">Responsive Design:</span> Layout is optimized to adjust seamlessly across a multitude of screen sizes.</li>
                         <li><span className="text-bold">UI/UX and Animations:</span> User Interface was designed to be easily accessible and contains animations for more tactility.</li>
                     </ul>
 
-                    <h2>Home Page:</h2>
+                    <h2 className="heading-bubble">Home Page:</h2>
                     <ul className='features'>
                         <li><span className="text-bold">Banner with Animation:</span> Home page has an animated banner explaining to the user the purpose of the website.</li>
                         <li><span className="text-bold">Navbar:</span> Navigation bar that leads to login and signup modals, search page, home page.</li>
                         <li><span className="text-bold">Site Links:</span> Sections to other parts of the website like rankings, seasonal anime, search page, etc.</li>
                     </ul>
 
-                    <h2>Search Page:</h2>
+                    <h2 className="heading-bubble">Search Page:</h2>
                     <ul className='features'>
                         <li><span className="text-bold">Search Functionality:</span> Users can search through anime or manga via a toggle near the top.</li>
                         <li><span className="text-bold">Debounced Search:</span> Search is debounced and users need not hit enter to see their results.</li>
@@ -76,19 +76,19 @@ const Tokei = () => {
                         <li><span className="text-bold">Query URL Parameters:</span> Search results are appended to the URL to generate a unique link for sharing or revisiting specific results.</li>
                     </ul>
 
-                    <h2>Rankings Page:</h2>
+                    <h2 className="heading-bubble">Rankings Page:</h2>
                     <ul className='features'>
                         <li><span className="text-bold">Top Anime and Manga:</span> Lists the top anime and manga depending on the toggle.</li>
                         <li><span className="text-bold">Pagination:</span> Search results are paginated to prevent excessive API requests, allowing users to browse through search results without overwhelming the server and improving performance.</li>
                     </ul>
 
-                    <h2>Seasonal Page:</h2>
+                    <h2 className="heading-bubble">Seasonal Page:</h2>
                     <ul className='features'>
                         <li><span className="text-bold">Seasonal Anime:</span> Lists the current seasonal anime.</li>
                         <li><span className="text-bold">Pagination:</span> Search results are paginated to prevent excessive API requests, allowing users to browse through search results without overwhelming the server and improving performance.</li>
                     </ul>
 
-                    <h2>Anime and Manga Details Page:</h2>
+                    <h2 className="heading-bubble">Anime and Manga Details Page:</h2>
                     <ul className='features'>
                         <li><span className="text-bold">Dynamic Routes:</span> Using Next.JS dynamic routes we are able to fetch and display data based on the ID in URL.</li>
                         <li><span className="text-bold">Details:</span> Shows details of the anime or manga including the title, synopsis, genres, and more.</li>
@@ -97,7 +97,7 @@ const Tokei = () => {
                         <li><span className="text-bold">Watch / Read Analytics:</span> Provided bar graph showing how many people are watching/reading, completed, delaying, dropped, or planning to watch/read the anime or manga.</li>
                     </ul>
 
-                    <h2>Comments:</h2>
+                    <h2 className="heading-bubble">Comments:</h2>
                     <ul className="features">
                         <li><span className="text-bold">Comment Section:</span> Users can leave their thoughts on a given anime or manga.</li>
                         <li><span className="text-bold">Comment Details:</span> Display User role, username, comment details, and date posted.</li>
@@ -105,7 +105,7 @@ const Tokei = () => {
                         <li><span className="text-bold">Comment Admin Controls:</span> Admin users can delete comments if deemed inappropriate.</li>
                     </ul>
 
-                    <h2>User Authentication:</h2>
+                    <h2 className="heading-bubble">User Authentication:</h2>
                     <ul className='features'>
                         <li><span className="text-bold">Sign Up:</span> Users can create an account.</li>
                         <li><span className="text-bold">Login:</span> Users can log in to their account.</li>

@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #2f3a45;;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,10 +23,11 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #3a4856;
-  border-radius: 10px;
+  background-color: #11264e;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
   flex-wrap: wrap;
+  border: 5px solid #c3976f;
+  border-radius: 10px;
 }
 
 .flex-row-container {
@@ -50,7 +51,7 @@ body {
 }
 
 .headshot-container {
-  padding: 20px;
+  padding: 100px;
 }
 
 .headshot {
@@ -58,16 +59,26 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border-color: #75b7ea;
-  border-width: 5px;
-  border-style: solid;
+  border: solid 5px #c3976f;
 }
 
-.introduction {
-  border: solid 5px;
+.info-container {
+  width: 100%;
   padding: 20px;
   border-radius: 10px;
-  background-color: #75b7ea;
+  border: solid 5px #c3976f;
+  background: linear-gradient(to top right, #333333, #1a1a1a);
+}
+
+.name-text-shadow {
+  font-weight: bold;
+  color: #c3976f;
+  text-shadow: 10px 10px 20px black;
+}
+
+.education-details {
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 /* Responsive Breakpoints */

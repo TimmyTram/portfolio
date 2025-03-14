@@ -36,7 +36,7 @@ const CoffeeSpot = () => {
             </div>
 
             <div>
-                <h2>Technologies Used:</h2>
+                <h2 className="heading-bubble">Technologies Used:</h2>
                 <div className="flex-row-container">
                     <TechIcon filename="typescript" displayname="TypeScript" size={20} fontSize={15} />
                     <TechIcon filename="nextjs" displayname="Next.js" size={20} fontSize={15} />
@@ -51,37 +51,78 @@ const CoffeeSpot = () => {
 
             <div className="flex-col-container">
                 <div>
-                    <h2>Purpose:</h2>
+                    <h2 className="heading-bubble">Purpose:</h2>
                     <p className="text-description">
-                        CoffeeSpot is a full-stack web application, built by College Students, for College students.
-                        CoffeeSpot is a platform that allows users to find, locate, and review coffee shops, libraries, public parks, and other forms of third places curated by our userbase to find studying locations.
-                        Users can create an account, search for third places, and leave reviews for other users to see.
+                        Coffee Spot is an intuitive and user-friendly application designed to help users
+                        discover the ideal third place tailored to their specific needs. By using user input and
+                        location data, Coffee Spot will allow users to filter spaces based on Wi-Fi quality and animal friendliness. 
+                        The application will deliver recommendations, helping users find coffee shops, libraries, and other suitable
+                        locations. It also integrates reviews from our users and will update space availability to
+                        help users make informed choices
                     </p>
 
-                    <h2>My Role on the Team:</h2>
+                    <h2 className="heading-bubble">My Role on the Team:</h2>
                     <p className="text-description">
                         My assigned role in CoffeeSpot was <span className="text-bold">Backend Lead</span>.
-                        I was responsible for designing the RESTful API, creating the database schema, handling user authentication and authorization and image uploading, storage, and deletion.
-                        As a team member of CoffeeSpot, I was also responsible for code reviews and managing pull requests as well as contributing to frontend components and the administation dashboard.
+                        My Responsbilites included:
                     </p>
-                    <h2>Features:</h2>
+                    <ul className="features">
+                        <li>Designing and Implementing the backend architecture using Prisma and MongoDB.</li>
+                        <li>Creating the API routes and React Hooks for the Frontend team to use.</li>
+                        <li>Handling User Authentication and Authorization using next-auth</li>
+                        <li>Implementing the Admin Dashboard.</li>
+                        <li>Helping debug any deployment issues on Vercel or Mongodb Atlas.</li>
+                        <li>Researching Image Storage Solutions such as AWS S3 and Vercel Blobs.</li>
+                        <li>Developing Prototypes to show Proof of Concept for new features.</li>
+                        <li>Code Reviews and Pull Request Approvals.</li>
+                        <li>Mentoring Backend members on how to use the API or write NextJS APIs routes.</li>
+                        <li>Conducting Integration Tests along with Scrum Master and Backend Members.</li>
+                        <li>Creating documentation for Backend API and React Hooks.</li>
+                        <li>Helping develop components Frontend team needed help with.</li>
+                    </ul>
+                    <h2 className="heading-bubble">Features:</h2>
                     <ul className="features">
                         <li><span className="text-bold">Responsive Design:</span> Layout is optimized to adjust seamlessly across a multitude of screen sizes.</li>
                         <li><span className="text-bold">UI/UX:</span> Follows our Figma Design closely and has a strong sense of branding with our mascot. Intentionally picked warmer colors and themes associated with studying.</li>
                     </ul>
 
-                    <h2>Home Page:</h2>
+                    <h2 className="heading-bubble">Home Page:</h2>
                     <ul className="features">
                         <li><span className="text-bold">Banner:</span> Friendly welcoming banner explaining the purpose of our site.</li>
                         <li><span className="text-bold">Locations List:</span> Lists curated locations</li>
                     </ul>
 
+                    <h2 className="heading-bubble">Search Page:</h2>
+                    <ul className="features">
+                        <li><span className="text-bold">Search Bar:</span> Search for locations by name or location.</li>
+                        <li><span className="text-bold">Query URL Parameters:</span> Search results are appended to the URL to generate a unique link for sharing or revisiting specific results.</li>
+                        <li><span className="text-bold">Filter:</span> Filter locations by type, rating, attributes, or distance.</li>
+                        <li><span className="text-bold">Map:</span> Have a dynamic map that shows colored coded pins and locations of third places.</li>
+                    </ul>
+
+                    <h2 className="heading-bubble">Location Page:</h2>
+                    <ul className="features">
+                        <li><span className="text-bold">Location Information:</span> Shows location information, reviews, images, and average rating and busyness.</li>
+                        <li><span className="text-bold">Reviews:</span> Users can leave reviews and ratings for locations.</li>
+                        <li><span className="text-bold">Bookmarks:</span>User can bookmark a location that they want to revisit later.</li>
+                    </ul>
+
+                    <h2 className="heading-bubble">User Profile:</h2>
+                    <ul className="features">
+                        <li><span className="text-bold">User Information:</span> Shows user information, reviews, and bookmarks.</li>
+                        <li><span className="text-bold">Edit Profile:</span> User can edit their email or password.</li>
+                    </ul>
+
+                    <h2 className="heading-bubble">Admin Dashboard:</h2>
+                    <ul className="features">
+                        <li><span className='text-bold'>Analytics:</span> Shows number of users, locations, reviews, and bookmarks</li>
+                        <li><span className='text-bold'>Create Locations:</span> A form to create a new curated location.</li>
+                        <li><span className='text-bold'>Edit Locations:</span> A form to edit a curated location.</li>
+                        <li><span className='text-bold'>Delete Locations:</span> A form to delete a curated location.</li>
+                        <li><span className='text-bold'>Location Card Admin Controls:</span> Can directly edit or delete location cards.</li>
+                    </ul>
                 </div>
-
-
             </div>
-
-
         </div>
     );
 };
