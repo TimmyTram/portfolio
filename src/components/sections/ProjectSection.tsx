@@ -1,9 +1,12 @@
 import CoffeeSpot from "./projects/CoffeeSpot";
-import Collapse from "../UI/Collapse";
 import { useState } from "react";
+import Modal from "../UI/Modal";
 
 const ProjectSection = () => {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openModal = () => setIsOpen(true);
+    const closeModal = () => setIsOpen(false);
 
     return (
         <div className="container">
@@ -11,13 +14,16 @@ const ProjectSection = () => {
                 <h1>Projects:</h1>
                 <button
                     className="btn"
-                    onClick={() => setIsOpen(!isOpen)}
+                    onClick={openModal}
                 >
-                    {isOpen ? 'Hide' : 'Show'} CoffeeSpot
+                    Show CoffeeSpot
                 </button>
-                <Collapse isOpen={isOpen}>
+                <Modal
+                    isOpen={isOpen}
+                    onClose={closeModal}
+                >
                     <CoffeeSpot />
-                </Collapse>
+                </Modal>
             </div>
         </div>
     );

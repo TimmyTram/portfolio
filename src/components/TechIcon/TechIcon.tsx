@@ -5,9 +5,10 @@ interface TechIconProps {
     filename: string;
     displayname?: string;
     size?: string | number;
+    fontSize?: string | number;
 }
 
-const TechIcon = ({ filename, displayname, size = '55px' }: TechIconProps) => {
+const TechIcon = ({ filename, displayname, size = '55px',  fontSize = '15px'}: TechIconProps) => {
     const [IconComponent, setIconComponent] = useState<React.ReactNode | null>(null);
 
     // dynamically import icon based on name prop which gets it from the asset folder
@@ -30,7 +31,7 @@ const TechIcon = ({ filename, displayname, size = '55px' }: TechIconProps) => {
             <div className="rounded" style={{ width: size, height: size }}>
                 {IconComponent}
             </div>
-            <p className="display-text">
+            <p className="display-text" style={{ fontSize: fontSize }}>
                 {displayname}
             </p>
         </div>

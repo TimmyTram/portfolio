@@ -17,6 +17,9 @@ const TechStack = () => {
                     <TechIcon filename="mongodb" displayname="MongoDB"/>
                     <TechIcon filename="prisma" displayname="Prisma"/>
                     <TechIcon filename="swift" displayname="Swift"/>
+                    <TechIcon filename="tailwindcss" displayname="TailwindCSS"/>
+                    <TechIcon filename="html" displayname="HTML5"/>
+                    <TechIcon filename="css" displayname="CSS3"/>
                 </div>
             </div>
         </div>
