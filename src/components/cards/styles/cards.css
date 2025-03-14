@@ -1,0 +1,42 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    border: 5px solid #75b7ea;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    background-color: red;
+}
+
+.card p {
+    font-size: 1rem;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .card p {
+        font-size: 0.8rem;
+    }
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom: 5px solid #75b7ea;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
