@@ -11,8 +11,10 @@ const Card = ({ title, image, description, onClick }: CardProps) => {
     return (
         <div className="card" onClick={onClick}>
             <img src={image} alt={title} />
-            <h2>{title}</h2>
-            <p>{description}</p>
+            <div className="card-content">
+                <h2>{title}</h2>
+                <p>{description}</p>
+            </div>
         </div>
     );
 };
