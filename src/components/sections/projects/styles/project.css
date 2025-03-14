@@ -1,15 +1,20 @@
 .demo-video {
     width: 600px;
     height: 400px;
-    border: solid 5px #75b7ea;
+    border: solid 5px #c3976f;
     border-radius: 20px;
 }
 
 .text-description {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     padding-left: 5rem;
     padding-right: 5rem;
     white-space: pre-line;
     font-size: 1.5rem;
+    background: linear-gradient(to top right, #333333, #1a1a1a);
+    border-radius: 20px;
+    border: solid 5px #c3976f;
 }
 
 .text-bold {
@@ -18,13 +23,18 @@
 
 .features {
     text-align: left;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     padding-left: 5rem;
     padding-right: 5rem;
     font-size: 1.5rem;
+    background: linear-gradient(to top right, #333333, #1a1a1a);
+    border-radius: 20px;
+    border: solid 5px #c3976f;
 }
 
 .heading-bubble {
-    background-color: #75b7ea;
+    background-color: #c3976f;
     padding: 1rem;
     border-radius: 20px;
     margin-top: 2rem;

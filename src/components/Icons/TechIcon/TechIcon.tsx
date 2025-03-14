@@ -15,7 +15,7 @@ const TechIcon = ({ filename, displayname, size = '55px',  fontSize = '15px'}: T
     useEffect(() => {
         const loadIcon = async () => {
             try {
-                const iconModule = await import(`../../assets/techIcons/${filename}.svg?react`);
+                const iconModule = await import(`../../../assets/techIcons/${filename}.svg?react`);
                 setIconComponent(<iconModule.default width={size} height={size} />);
             } catch (error) {
                 console.error("Icon not found:", error);
@@ -24,7 +24,7 @@ const TechIcon = ({ filename, displayname, size = '55px',  fontSize = '15px'}: T
         };
 
         loadIcon();
-    }, [name, size]);
+    }, [filename, size]);
 
     return (
         <div>

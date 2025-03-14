@@ -1,4 +1,4 @@
-import TechIcon from '../../TechIcon/TechIcon';
+import TechIcon from '../../Icons/TechIcon/TechIcon';
 import Button from '../../UI/Button';
 import './styles/project.css';
 

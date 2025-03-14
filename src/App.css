@@ -68,6 +68,7 @@ body {
   border-radius: 10px;
   border: solid 5px #c3976f;
   background: linear-gradient(to top right, #333333, #1a1a1a);
+  box-sizing: border-box;
 }
 
 .name-text-shadow {
@@ -79,11 +80,16 @@ body {
 .education-details {
   text-align: center;
   font-size: 1.2rem;
+  padding: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Responsive Breakpoints */
 
-@media (max-width: 640px) { /* Small screens */
+@media (max-width: 640px) {
+
+  /* Small screens */
   body {
     flex-direction: column;
     padding: 10px;
@@ -108,9 +114,22 @@ body {
     flex-direction: column;
     gap: 1.5rem;
   }
+
+  .education-details {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .info-container {
+    padding: 10px;
+    border-width: 3px;
+  }
+
 }
 
-@media (max-width: 768px) { /* Medium screens */
+@media (max-width: 768px) {
+
+  /* Medium screens */
   .container {
     width: 90%;
     padding: 15px;
@@ -126,11 +145,21 @@ body {
   }
 
   .flex-row-container {
-    gap: 2rem; /* Slightly reduced gap for medium screens */
+    gap: 2rem;
+  }
+
+  .education-details {
+    font-size: 1.1rem;
+  }
+
+  .info-container {
+    padding: 15px;
   }
 }
 
-@media (max-width: 1024px) { /* Large screens */
+@media (max-width: 1024px) {
+
+  /* Large screens */
   .container {
     width: 95%;
     padding: 15px;

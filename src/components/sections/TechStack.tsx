@@ -1,4 +1,4 @@
-import TechIcon from "../TechIcon/TechIcon";
+import TechIcon from "../Icons/TechIcon/TechIcon";
 
 const TechStack = () => {
     return (
