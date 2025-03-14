@@ -1,12 +1,12 @@
 import './App.css'
-import headshot from '../public/headshot.jpg';
+import TechIcon from './components/TechIcon/TechIcon'
 
 function App() {
 
   return (
-    <div className='container'>
-      <div className='flex-row-container'>
-        <img className='headshot' src={headshot} alt="headshot" />
+    <div className='flex-row-container'>
+      <div className='container'>
+        <img className='headshot' src="/portfolio/headshot.jpg" alt="headshot" />
 
         <div className="flex-col-container">
           <div className="introduction">
@@ -20,6 +20,26 @@ function App() {
           </div>
         </div>
       </div>
+
+      <div className="container">
+        <div className="flex-col--container">
+          <h2>Tech Stack:</h2>
+          <div className="flex-row-container">
+            <TechIcon name="java" size="50px" />
+            <TechIcon name="python" size="50px" />
+            <TechIcon name="javascript" size="50px" />
+            <TechIcon name="typescript" size="50px" />
+            <TechIcon name="nodejs" size="50px" />
+            <TechIcon name="react" size="50px" />
+            <TechIcon name="nextjs" size="50px" />
+            <TechIcon name="mysql" size="50px" />
+            <TechIcon name="mongodb" size="50px" />
+            <TechIcon name="prisma" size="50px" />
+            <TechIcon name="swift" size="50px" />
+          </div>
+        </div>
+      </div>
+
     </div>
   )
 }
