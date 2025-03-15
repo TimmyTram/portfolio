@@ -4,6 +4,10 @@ import Modal from "../UI/Modal";
 import CoffeeSpot from "./projects/CoffeeSpot";
 import Tokei from "./projects/Tokei";
 import ChatWebApp from "./projects/ChatWebApp";
+import GameSalesApp from "./projects/GameSalesApp";
+import LLMDiscordBot from "./projects/LLMDiscordBot";
+import TankGame from "./projects/TankGame";
+import ImageForum from "./projects/ImageForum";
 import { useState } from "react";
 
 const ProjectSection = () => {
@@ -14,12 +18,20 @@ const ProjectSection = () => {
 
     const renderProjectComponent = () => {
         switch (selectedProject) {
-            case "CoffeeSpot":
-                return <CoffeeSpot />;
             case "Tokei":
                 return <Tokei />;
+            case "CoffeeSpot":
+                return <CoffeeSpot />;
             case "ChatWebApp":
                 return <ChatWebApp />;
+            case 'GameSalesApp':
+                return <GameSalesApp />;
+            case 'LLMDiscordBot':
+                return <LLMDiscordBot />;
+            case 'TankGame':
+                return <TankGame />;
+            case 'ImageForum':
+                return <ImageForum />;
             default:
                 return null;
         }
@@ -50,6 +62,34 @@ const ProjectSection = () => {
                         image="/portfolio/chatWebApp.png"
                         description="Real-time chat application using Socket.io."
                         onClick={() => openModal("ChatWebApp")}
+                    />
+
+                    <Card
+                        title="Game Sales App"
+                        image="/portfolio/gameSalesApp.png"
+                        description="SwiftUI iOS Application to find and track video game sales."
+                        onClick={() => openModal("GameSalesApp")}
+                    />
+
+                    <Card
+                        title="Local LLM Discord Bot"
+                        image="/portfolio/llmDiscordBot.png"
+                        description="Discord Bot hooked up to a Local LLM via sockets."
+                        onClick={() => openModal("LLMDiscordBot")}
+                    />
+
+                    <Card
+                        title="Tank Game: Pokemon Safari Zone Edition"
+                        image="/portfolio/tankGame.png"
+                        description="Pokemon Themed Tank Game built using Java"
+                        onClick={() => openModal("TankGame")}
+                    />
+
+                    <Card
+                        title="Unnamed Image Web Forum Application"
+                        image="/portfolio/imageForum.png"
+                        description="Web Forum Application to share images and discuss."
+                        onClick={() => openModal("ImageForum")}
                     />
 
                     <Modal isOpen={!!selectedProject} onClose={closeModal}>

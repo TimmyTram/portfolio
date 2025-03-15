@@ -37,9 +37,6 @@ const Tokei = () => {
             </div>
 
             <div className="flex-col-container">
-                <p className="text-description">
-                    Tokei is a full-stack web application that provides users with Anime and Manga recommendations using the Jikan V4 API.
-                </p>
 
                 <div className='tech-stack-container'>
                     <h2 className="heading-bubble">Technologies Used:</h2>
@@ -52,6 +49,13 @@ const Tokei = () => {
                         <TechIcon filename="mongodb" displayname="MongoDB" size={20} fontSize={15} />
                         <TechIcon filename="vercel" displayname="Vercel" size={20} fontSize={15} />
                     </div>
+                    
+                <div>
+                    <h2 className="heading-bubble">Purpose:</h2>
+                    <p className="text-description">
+                        Tokei is a full-stack web application that provides users with Anime and Manga recommendations using the Jikan V4 API.
+                    </p>
+                </div>
 
                     <h2 className="heading-bubble">Features:</h2>
                     <ul className='features'>
