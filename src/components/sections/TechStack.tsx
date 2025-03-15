@@ -4,7 +4,7 @@ const TechStack = () => {
     return (
         <div className="container">
             <div className="flex-col-container">
-                <h2>Tech Stack:</h2>
+                <h1>Tech Stack:</h1>
                 <div className="flex-row-container">
                     <TechIcon filename="java" displayname="Java" />
                     <TechIcon filename="python" displayname="Python"/>
