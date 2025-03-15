@@ -4,7 +4,7 @@ const Introduction = () => {
     return (
         <div className='container'>
             <div className="headshot-container">
-                <img className='headshot' src="/portfolio/headshot.jpg" alt="headshot" />
+                <img className='headshot' src="/portfolio/headshot/headshot.jpg" alt="headshot" />
             </div>
 
             <div className="flex-col-container">

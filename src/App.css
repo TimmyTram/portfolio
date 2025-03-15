@@ -67,6 +67,10 @@ body {
 }
 
 .info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 20px;
   border-radius: 10px;
@@ -74,6 +78,11 @@ body {
   background: linear-gradient(to top right, #333333, #1a1a1a);
   box-sizing: border-box;
 }
+
+.info-container h2 {
+  text-align: center;
+}
+
 
 .name-text-shadow {
   font-weight: bold;
