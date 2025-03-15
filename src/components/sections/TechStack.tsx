@@ -11,6 +11,7 @@ const TechStack = () => {
                     <TechIcon filename="javascript" displayname="JavaScript"/>
                     <TechIcon filename="typescript" displayname="TypeScript"/>
                     <TechIcon filename="nodejs" displayname="Node.js"/>
+                    <TechIcon filename="expressjs" displayname="ExpressJS"/>
                     <TechIcon filename="react" displayname="React"/>
                     <TechIcon filename="nextjs" displayname="Next.JS"/>
                     <TechIcon filename="mysql" displayname="MySQL"/>

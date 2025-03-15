@@ -52,9 +52,7 @@ const Tokei = () => {
                         <TechIcon filename="mongodb" displayname="MongoDB" size={20} fontSize={15} />
                         <TechIcon filename="vercel" displayname="Vercel" size={20} fontSize={15} />
                     </div>
-                </div>
 
-                <div>
                     <h2 className="heading-bubble">Features:</h2>
                     <ul className='features'>
                         <li><span className="text-bold">Responsive Design:</span> Layout is optimized to adjust seamlessly across a multitude of screen sizes.</li>

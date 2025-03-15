@@ -3,6 +3,7 @@ import './styles/ProjectSection.css';
 import Modal from "../UI/Modal";
 import CoffeeSpot from "./projects/CoffeeSpot";
 import Tokei from "./projects/Tokei";
+import ChatWebApp from "./projects/ChatWebApp";
 import { useState } from "react";
 
 const ProjectSection = () => {
@@ -17,6 +18,8 @@ const ProjectSection = () => {
                 return <CoffeeSpot />;
             case "Tokei":
                 return <Tokei />;
+            case "ChatWebApp":
+                return <ChatWebApp />;
             default:
                 return null;
         }
@@ -34,12 +37,19 @@ const ProjectSection = () => {
                         description="Web App to find Anime and Manga recommendations and data."
                         onClick={() => openModal("Tokei")}
                     />
-                    
+
                     <Card
                         title="CoffeeSpot"
                         image="/portfolio/coffeeSpot.png"
                         description="Web App to find third places to work or study."
                         onClick={() => openModal("CoffeeSpot")}
+                    />
+
+                    <Card
+                        title="Chat Web App"
+                        image="/portfolio/chatWebApp.png"
+                        description="Real-time chat application using Socket.io."
+                        onClick={() => openModal("ChatWebApp")}
                     />
 
                     <Modal isOpen={!!selectedProject} onClose={closeModal}>
