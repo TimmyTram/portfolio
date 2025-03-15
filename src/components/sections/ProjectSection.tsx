@@ -45,49 +45,49 @@ const ProjectSection = () => {
                 <div className="card-container">
                     <Card
                         title="Tokei"
-                        image="/portfolio/tokei.png"
+                        image="/portfolio/CardImages/tokei.png"
                         description="Web App to find Anime and Manga recommendations and data."
                         onClick={() => openModal("Tokei")}
                     />
 
                     <Card
                         title="CoffeeSpot"
-                        image="/portfolio/coffeeSpot.png"
+                        image="/portfolio/CardImages/coffeeSpot.png"
                         description="Web App to find third places to work or study."
                         onClick={() => openModal("CoffeeSpot")}
                     />
 
                     <Card
                         title="Chat Web App"
-                        image="/portfolio/chatWebApp.png"
+                        image="/portfolio/CardImages/chatWebApp.png"
                         description="Real-time chat application using Socket.io."
                         onClick={() => openModal("ChatWebApp")}
                     />
 
                     <Card
                         title="Game Sales App"
-                        image="/portfolio/gameSalesApp.png"
+                        image="/portfolio/CardImages/gameSalesApp.png"
                         description="SwiftUI iOS Application to find and track video game sales."
                         onClick={() => openModal("GameSalesApp")}
                     />
 
                     <Card
                         title="Local LLM Discord Bot"
-                        image="/portfolio/llmDiscordBot.png"
+                        image="/portfolio/CardImages/llmDiscordBot.png"
                         description="Discord Bot hooked up to a Local LLM via sockets."
                         onClick={() => openModal("LLMDiscordBot")}
                     />
 
                     <Card
                         title="Tank Game: Pokemon Safari Zone Edition"
-                        image="/portfolio/tankGame.png"
+                        image="/portfolio/CardImages/tankGame.png"
                         description="Pokemon Themed Tank Game built using Java"
                         onClick={() => openModal("TankGame")}
                     />
 
                     <Card
                         title="Unnamed Image Web Forum Application"
-                        image="/portfolio/imageForum.png"
+                        image="/portfolio/CardImages/imageForum.png"
                         description="Web Forum Application to share images and discuss."
                         onClick={() => openModal("ImageForum")}
                     />
