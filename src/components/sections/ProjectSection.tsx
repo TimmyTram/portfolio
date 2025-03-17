@@ -38,7 +38,7 @@ const ProjectSection = () => {
     };
 
     return (
-        <div className="container" style={{ padding: "20px" }}>
+        <div id="projects" className="container">
             <div className="project-section-container">
                 <h1>Projects:</h1>
 

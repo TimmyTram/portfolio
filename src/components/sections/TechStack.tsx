@@ -2,7 +2,7 @@ import TechIcon from "../Icons/TechIcon/TechIcon";
 
 const TechStack = () => {
     return (
-        <div className="container">
+        <div id="tech-stack" className="container">
             <div className="flex-col-container">
                 <h1>Tech Stack:</h1>
                 <div className="flex-row-container">
