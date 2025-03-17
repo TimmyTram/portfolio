@@ -12,6 +12,7 @@
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    z-index: 200;
 }
 
 .modal.open {

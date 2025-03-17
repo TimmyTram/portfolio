@@ -4,6 +4,7 @@ import TechStack from './components/sections/TechStack'
 import ProjectSection from './components/sections/ProjectSection'
 import StarIcon from './components/Icons/StarIcon/StarIcon'
 import Navbar from './components/navbar/Navbar'
+import Experiences from './components/sections/Experiences'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Introduction />
           <TechStack />
           <ProjectSection />
+          <Experiences />
         </div>
       </div>
     </div>

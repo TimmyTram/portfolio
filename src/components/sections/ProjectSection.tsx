@@ -1,4 +1,4 @@
-import Card from "../cards/card";
+import ProjectCard from '../cards/ProjectCard';
 import './styles/ProjectSection.css';
 import Modal from "../UI/Modal";
 import CoffeeSpot from "./projects/CoffeeSpot";
@@ -43,49 +43,49 @@ const ProjectSection = () => {
                 <h1>Projects:</h1>
 
                 <div className="card-container">
-                    <Card
+                    <ProjectCard
                         title="Tokei"
                         image="/portfolio/CardImages/tokei.png"
                         description="Web App to find Anime and Manga recommendations and data."
                         onClick={() => openModal("Tokei")}
                     />
 
-                    <Card
+                    <ProjectCard
                         title="CoffeeSpot"
                         image="/portfolio/CardImages/coffeeSpot.png"
                         description="Web App to find third places to work or study."
                         onClick={() => openModal("CoffeeSpot")}
                     />
 
-                    <Card
+                    <ProjectCard
                         title="Chat Web App"
                         image="/portfolio/CardImages/chatWebApp.png"
                         description="Real-time chat application using Socket.io."
                         onClick={() => openModal("ChatWebApp")}
                     />
 
-                    <Card
+                    <ProjectCard
                         title="Game Sales App"
                         image="/portfolio/CardImages/gameSalesApp.png"
                         description="SwiftUI iOS Application to find and track video game sales."
                         onClick={() => openModal("GameSalesApp")}
                     />
 
-                    <Card
+                    <ProjectCard
                         title="Local LLM Discord Bot"
                         image="/portfolio/CardImages/llmDiscordBot.png"
                         description="Discord Bot hooked up to a Local LLM via sockets."
                         onClick={() => openModal("LLMDiscordBot")}
                     />
 
-                    <Card
+                    <ProjectCard
                         title="Tank Game: Pokemon Safari Zone Edition"
                         image="/portfolio/CardImages/tankGame.png"
                         description="Pokemon Themed Tank Game built using Java"
                         onClick={() => openModal("TankGame")}
                     />
 
-                    <Card
+                    <ProjectCard
                         title="Unnamed Image Web Forum Application"
                         image="/portfolio/CardImages/imageForum.png"
                         description="Web Forum Application to share images and discuss."
