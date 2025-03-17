@@ -1,8 +1,10 @@
 import EducationInfo from "./EducationInfo";
+import ContactInfo from "./ContactInfo";
 
 const Introduction = () => {
     return (
         <div id="about" className='container'>
+            <div className="flex-row-container">
                 <div className="headshot-container">
                     <img className='headshot' src="/portfolio/headshot/headshot.jpg" alt="headshot" />
                 </div>
@@ -14,7 +16,9 @@ const Introduction = () => {
                         <p>More specifically, I enjoy UI/UX Design and designing RESTful APIs and making database schemas</p>
                     </div>
                     <EducationInfo />
+                    <ContactInfo />
                 </div>
+            </div>
         </div>
     );
 }
