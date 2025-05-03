@@ -1,25 +1,51 @@
+import { useState } from "react";
+import { resources } from "../constants/constants";
+import { FiMenu } from "react-icons/fi";
+import { IoIosCloseCircle } from "react-icons/io";
+
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <nav className="
-        sticky top-0 z-50 w-full backdrop-blur flex 
-        justify-between items-center 
-        bg-navbar border-b-4 p-6 text-white"
+            sticky top-0 z-50 w-full backdrop-blur flex 
+            justify-between items-center 
+            bg-navbar border-b-4 p-6 text-white"
         >
             <p className="font-bold text-xl">Timmy Tram</p>
 
-            <div>
-                <ul className="flex space-x-4">
-                    <li className="hover:text-blue-300 cursor-pointer">Home</li>
-                    <li className="hover:text-blue-300 cursor-pointer">About</li>
-                    <li className="hover:text-blue-300 cursor-pointer">Contact</li>
-                    <li className="hover:text-blue-300 cursor-pointer">Education</li>
-                    <li className="hover:text-blue-300 cursor-pointer">Technologies</li>
-                    <li className="hover:text-blue-300 cursor-pointer">Projects</li>
-                    <li className="hover:text-blue-300 cursor-pointer">Experiences</li>
-                </ul>
+            {/* Desktop Links */}
+            <ul className="hidden md:flex space-x-4">
+                {resources.map((resource: string, index: number) => (
+                    <li key={index} className="font-bold hover:text-gray-300 cursor-pointer">
+                        {resource}
+                    </li>
+                ))}
+            </ul>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden">
+                <button onClick={() => setIsOpen(!isOpen)}>
+                    {isOpen ? <IoIosCloseCircle size={24} /> : <FiMenu size={24} />}
+                </button>
             </div>
+
+            {/* Mobile Dropdown */}
+            {isOpen && (
+                <div className="absolute top-full left-0 w-full bg-black border-t border-white md:hidden">
+                    <ul className="flex flex-col items-start p-2 rounded-lg space-y-2">
+                        {resources.map((resource: string, index: number) => (
+                            <div className="w-full hover:bg-royal-blue p-4 cursor-pointer" key={index}>
+                                <li className="font-bold">
+                                    {resource}
+                                </li>
+                            </div>
+                        ))}
+                    </ul>
+                </div>
+            )}
         </nav>
     );
-}
+};
 
 export default Navbar;

@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-royal-blue: #1d315a;
+  --color-royal-blue-solid: #1d315a;
   --color-navbar: rgba(0, 0, 0, 0.5);
+  --color-royal-blue-opacity: rgba(29, 49, 90, 0.8);
 }
 
 
@@ -13,7 +14,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-image: url('/public/background/bg.jpg');
+  background-image: url('/background/bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
