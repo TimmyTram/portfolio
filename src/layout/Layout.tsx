@@ -4,9 +4,9 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
     return (
-        <div className="flex flex-col items-center min-h-screen">
-            <div className="w-[80%]">
-            {children}
+        <div className="flex flex-col items-center min-h-screen mb-10">
+            <div className="flex flex-col w-[80%] gap-4">
+                {children}
             </div>
         </div>
     );
