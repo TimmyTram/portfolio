@@ -1,13 +1,14 @@
 import Navbar from './components/Navbar'
+import Layout from './layout/Layout'
+import About from './sections/About'
 
 function App() {
   return (
     <>
       <Navbar />
-      
-      <div className="flex flex-col items-center justify-center p-8 text-red-500">
-        Welcome to my portfolio
-      </div>
+      <Layout>
+        <About />
+      </Layout>
     </>
   )
 }

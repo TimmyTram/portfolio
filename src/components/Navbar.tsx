@@ -1,7 +1,11 @@
 const Navbar = () => {
     return (
-        <nav className="sticky top-0 z-50 w-full backdrop-blur flex justify-between items-center bg-blue-500 border-b border-gray-500 p-4 text-white">
-            <p className="font-bold text-xl">My Portfolio</p>
+        <nav className="
+        sticky top-0 z-50 w-full backdrop-blur flex 
+        justify-between items-center 
+        bg-navbar border-b-4 p-6 text-white"
+        >
+            <p className="font-bold text-xl">Timmy Tram</p>
 
             <div>
                 <ul className="flex space-x-4">
