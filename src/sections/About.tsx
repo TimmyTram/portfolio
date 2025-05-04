@@ -5,7 +5,7 @@ const About = () => {
     return (
         <>
             {/* Header */}
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-lg shadow-lg p-6 mb-8 border-6 border-royal-gold-solid">
+            <div id="About" className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-lg shadow-lg p-6 mb-8 border-6 border-royal-gold-solid">
                 <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">About Me</h1>
                 <p className="text-blue-100 text-lg">Get to know my background and skills</p>
             </div>

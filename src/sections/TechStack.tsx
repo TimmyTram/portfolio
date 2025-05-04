@@ -8,9 +8,9 @@ import { DiPhotoshop } from "react-icons/di";
 
 const TechStack = () => {
     return (
-        <div className="">
+        <>
             {/* Header */}
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-lg shadow-lg p-6 mb-8 border-6 border-royal-gold-solid">
+            <div id="Technologies" className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-lg shadow-lg p-6 mb-8 border-6 border-royal-gold-solid">
                 <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Tech Stack</h1>
                 <p className="text-blue-100 text-lg">Technologies and tools I use regularly.</p>
             </div>
@@ -54,7 +54,7 @@ const TechStack = () => {
                     <TechIcon size={60} tech="Photoshop"><DiPhotoshop size={30} /></TechIcon>
                 </Section>
             </div>
-        </div>
+        </>
     );
 };
 

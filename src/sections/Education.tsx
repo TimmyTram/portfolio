@@ -2,7 +2,7 @@ const Education = () => {
     return (
         <>
             {/* Header */}
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-lg shadow-lg p-6 mb-8 border-6 border-royal-gold-solid">
+            <div id="Education" className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-lg shadow-lg p-6 mb-8 border-6 border-royal-gold-solid">
                 <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Education</h1>
                 <p className="text-blue-100 text-lg">My academic journey and achievements.</p>
             </div>
