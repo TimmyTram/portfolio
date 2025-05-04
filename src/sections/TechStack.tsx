@@ -1,10 +1,4 @@
 import TechIcon from "../components/TechIcon";
-import { FaJava, FaHtml5, FaCss3, FaPython, FaGitAlt, FaNodeJs } from "react-icons/fa";
-import { SiSpringboot, SiTypescript, SiExpress, SiPostgresql, SiMongodb } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io5";
-import { GrReactjs, GrMysql } from "react-icons/gr";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { DiPhotoshop } from "react-icons/di";
 import { techIconMap } from "../constants/techIconMaps";
 
 const TechStack = () => {
