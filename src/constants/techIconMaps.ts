@@ -1,10 +1,12 @@
 import React from "react";
-import { FaJava, FaHtml5, FaCss3, FaPython, FaGitAlt, FaNodeJs } from "react-icons/fa";
+import { FaJava, FaHtml5, FaCss3, FaPython, FaGitAlt, FaNodeJs, FaSwift } from "react-icons/fa";
 import { SiSpringboot, SiTypescript, SiExpress, SiPostgresql, SiMongodb } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { GrReactjs, GrMysql } from "react-icons/gr";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { DiPhotoshop } from "react-icons/di";
+
+
 
 export const techIconMap: Record<string, React.ReactNode> = {
     Java: React.createElement(FaJava),
@@ -24,4 +26,5 @@ export const techIconMap: Record<string, React.ReactNode> = {
     MySQL: React.createElement(GrMysql),
     PostgreSQL: React.createElement(SiPostgresql),
     MongoDB: React.createElement(SiMongodb),
+    Swift: React.createElement(FaSwift),
 };

@@ -2,9 +2,11 @@ import { useState } from "react";
 import { resources } from "../constants/constants";
 import { FiMenu } from "react-icons/fi";
 import { IoIosCloseCircle } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <nav className="
@@ -12,7 +14,7 @@ const Navbar = () => {
             justify-between items-center 
             bg-navbar border-b-4 border-royal-gold-solid p-6 text-white"
         >
-            <p className="font-bold text-xl">Timmy Tram</p>
+            <p className="font-bold text-xl cursor-pointer hover:text-royal-gold-solid-hover" onClick={() => navigate(`/`)}>Timmy Tram</p>
 
             {/* Desktop Links */}
             <ul className="hidden md:flex space-x-4">
