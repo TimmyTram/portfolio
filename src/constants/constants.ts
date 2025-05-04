@@ -24,6 +24,45 @@ export const resources = [
  */
 export const projects = [
     {
+        title: "Monster Hunter Wilds Wiki",
+        description: "A web application that display Monster Hunter Wilds Data in a user friendly manner. The Wiki supports upwards of 10 languages and will continually receive support until the final title update.",
+        imageUrl: "/portfolio/CardImages/monsterHunterWildsWiki.png",
+        slug: "monster-hunter-wilds-wiki",
+        motivation: "The motivation behind this project was to create a user-friendly platform for Monster Hunter Wilds players to access and information about the game. As many players have been saying, the UI/UX of Monster Hunter Wilds is sub-par for their standards including mine. As such, the goal was to build a comprehensive wiki that would serve as a one-stop resource for players looking for Monster HP Values, Weapon Damage Values, Crafting, Items, Crown Sizes and much more all without having to enter the game itself.",
+        features: [
+            "Search Functionality",
+            "Sidebar Navigation",
+            "Support for Multiple Languages",
+            "Responsive Design for Desktop and Mobile Screens",
+            "Light and Dark Mode",
+            "Ease of Use",
+        ],
+        technologies: [
+            "NextJS",
+            "ReactJS",
+            "Tailwind CSS",
+            "TypeScript",
+            "Git",
+        ],
+        links: {
+            github: "https://github.com/TimmyTram/mh-wilds-fe",
+            live: "https://mh-wilds-fe.vercel.app/",
+        },
+        challenges: [
+            "Implementing a debounced search functionality to reduce API calls.",
+            "Ensuring the website is responsive and works well on all devices.",
+            "Handling multiple languages returned from the API.",
+            "Creating a user-friendly interface that is easy to navigate.",
+        ],
+        lessons: [
+            "Improved skills in responsive design and user experience.",
+            "Learned how to handle multiple languages returned from an API.",
+            "Learned how to implement light and dark mode in a web application.",
+            "Learned how to use MongoDB Projection to reduce the size of the data returned from the API.",
+            "Learned how to read and use other people's API documentation.",
+        ],
+    },
+    {
         title: "Tokei",
         description: "A full-stack application that allows users to get the latest new and updates on their favorite anime and manga.",
         imageUrl: "/portfolio/CardImages/tokei.png",

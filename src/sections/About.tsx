@@ -1,4 +1,5 @@
 import Headshot from "../components/Headshot";
+import Contact from "./Contact";
 
 const About = () => {
     return (
@@ -13,8 +14,9 @@ const About = () => {
             <div className="bg-gradient-to-tr from-regal-gray-opacity via-royal-blue-opacity to-black rounded-lg shadow-md overflow-hidden border-6 border-royal-gold-solid">
                 <div className="flex flex-col md:flex-row">
                     {/* Headshot */}
-                    <div className="w-full md:w-1/3 flex justify-center items-center p-6 md:p-8 border-b-6 md:border-b-0 md:border-r-6 border-royal-gold-solid">
+                    <div className="w-full md:w-1/3 flex flex-col justify-center items-center p-6 md:p-8 border-b-6 md:border-b-0 md:border-r-6 border-royal-gold-solid">
                         <Headshot src="/portfolio/headshot/headshot.jpg" alt="Headshot" className="w-32 h-32 sm:w-64 sm:h-64" />
+                        <Contact />
                     </div>
 
                     {/* About Content */}
