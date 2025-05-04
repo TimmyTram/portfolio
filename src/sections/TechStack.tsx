@@ -1,0 +1,67 @@
+import TechIcon from "../components/TechIcon";
+import { FaJava, FaHtml5, FaCss3, FaPython, FaGitAlt, FaNodeJs } from "react-icons/fa";
+import { SiSpringboot, SiTypescript, SiExpress, SiPostgresql, SiMongodb } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import { GrReactjs, GrMysql } from "react-icons/gr";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { DiPhotoshop } from "react-icons/di";
+
+const TechStack = () => {
+    return (
+        <div className="w-full flex flex-col items-center mt-4 bg-royal-blue-solid p-4 rounded-lg shadow-md">
+            <h1 className="text-2xl font-bold mb-4">Tech Stack:</h1>
+
+            {/* Grouped Tech */}
+            <div className="w-full space-y-4">
+                {/* Languages */}
+                <Section title="Languages">
+                    <TechIcon size={60} tech="Java"><FaJava size={30} /></TechIcon>
+                    <TechIcon size={60} tech="Python"><FaPython size={30} /></TechIcon>
+                    <TechIcon size={60} tech="JavaScript"><IoLogoJavascript size={30} /></TechIcon>
+                    <TechIcon size={60} tech="TypeScript"><SiTypescript size={30} /></TechIcon>
+                    <TechIcon size={60} tech="HTML5"><FaHtml5 size={30} /></TechIcon>
+                    <TechIcon size={60} tech="CSS3"><FaCss3 size={30} /></TechIcon>
+                </Section>
+
+                {/* Backend */}
+                <Section title="Backend">
+                    <TechIcon size={60} tech="Spring Boot"><SiSpringboot size={30} /></TechIcon>
+                    <TechIcon size={60} tech="ExpressJS"><SiExpress size={30} /></TechIcon>
+                    <TechIcon size={60} tech="NodeJS"><FaNodeJs size={30} /></TechIcon>
+                </Section>
+
+                {/* Frontend */}
+                <Section title="Frontend">
+                    <TechIcon size={60} tech="ReactJS"><GrReactjs size={30} /></TechIcon>
+                    <TechIcon size={60} tech="NextJS"><RiNextjsFill size={30} /></TechIcon>
+                    <TechIcon size={60} tech="Tailwind CSS"><RiTailwindCssFill size={30} /></TechIcon>
+                </Section>
+
+                {/* Databases */}
+                <Section title="Databases">
+                    <TechIcon size={60} tech="MySQL"><GrMysql size={30} /></TechIcon>
+                    <TechIcon size={60} tech="PostgreSQL"><SiPostgresql size={30} /></TechIcon>
+                    <TechIcon size={60} tech="MongoDB"><SiMongodb size={30} /></TechIcon>
+                </Section>
+
+                {/* Tools */}
+                <Section title="Tools">
+                    <TechIcon size={60} tech="Git"><FaGitAlt size={30} /></TechIcon>
+                    <TechIcon size={60} tech="Photoshop"><DiPhotoshop size={30} /></TechIcon>
+                </Section>
+            </div>
+        </div>
+    );
+};
+
+// Reusable Section Component
+const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
+    <div className="w-full">
+        <h2 className="text-lg font-semibold italic mb-2">{title}</h2>
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3">
+            {children}
+        </div>
+    </div>
+);
+
+export default TechStack;

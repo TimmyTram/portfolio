@@ -1,27 +1,21 @@
-import './App.css'
-import Introduction from './components/sections/Introduction'
-import TechStack from './components/sections/TechStack'
-import ProjectSection from './components/sections/ProjectSection'
-import StarIcon from './components/Icons/StarIcon/StarIcon'
-import Navbar from './components/navbar/Navbar'
-import Experiences from './components/sections/Experiences'
+import { Route, Routes } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Layout from './layout/Layout'
+import Home from './pages/Home'
+import ProjectDetails from './pages/ProjectDetails'
 
 function App() {
   return (
-    <div id='Home'>
+    <>
       <Navbar />
-      <div className="app">
-        <StarIcon type='a' />
-        <StarIcon type='b' />
-        <div className='flex-col-container'>
-          <Introduction />
-          <TechStack />
-          <ProjectSection />
-          <Experiences />
-        </div>
-      </div>
-    </div>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project/:slug" element={<ProjectDetails />} />
+        </Routes>
+      </Layout>
+    </>
   )
 }
 
-export default App;
+export default App
