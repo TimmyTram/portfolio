@@ -1,15 +1,13 @@
 interface HeadshotProps {
     src: string;
     alt: string;
-    width?: number;
-    height?: number;
+    className?: string;
 }
 
-const Headshot = ({ src, alt, width = 256, height = 256 }: HeadshotProps) => {
+const Headshot = ({ src, alt, className }: HeadshotProps) => {
     return (
         <div
-            className="flex items-center justify-center rounded-full overflow-hidden flex-shrink-0 border-4 border-royal-gold-solid"
-            style={{ width: `${width}px`, height: `${height}px` }}
+            className={`flex items-center justify-center rounded-full overflow-hidden flex-shrink-0 border-4 border-royal-gold-solid ${className}`}
         >
             <img src={src} alt={alt} className="w-full h-full object-cover" />
         </div>

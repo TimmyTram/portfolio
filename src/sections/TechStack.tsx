@@ -8,19 +8,21 @@ import { DiPhotoshop } from "react-icons/di";
 
 const TechStack = () => {
     return (
-        <div className="w-full flex flex-col items-center mt-4 bg-royal-blue-solid p-4 rounded-lg shadow-md">
-            <h1 className="text-2xl font-bold mb-4">Tech Stack:</h1>
+        <div className="">
+            {/* Header */}
+            <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-lg shadow-lg p-6 mb-8 border-6 border-royal-gold-solid">
+                <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Tech Stack</h1>
+                <p className="text-blue-100 text-lg">Technologies and tools I use regularly.</p>
+            </div>
 
             {/* Grouped Tech */}
-            <div className="w-full space-y-4">
+            <div className="space-y-8">
                 {/* Languages */}
                 <Section title="Languages">
                     <TechIcon size={60} tech="Java"><FaJava size={30} /></TechIcon>
                     <TechIcon size={60} tech="Python"><FaPython size={30} /></TechIcon>
-                    <TechIcon size={60} tech="JavaScript"><IoLogoJavascript size={30} /></TechIcon>
                     <TechIcon size={60} tech="TypeScript"><SiTypescript size={30} /></TechIcon>
-                    <TechIcon size={60} tech="HTML5"><FaHtml5 size={30} /></TechIcon>
-                    <TechIcon size={60} tech="CSS3"><FaCss3 size={30} /></TechIcon>
+                    <TechIcon size={60} tech="JavaScript"><IoLogoJavascript size={30} /></TechIcon>
                 </Section>
 
                 {/* Backend */}
@@ -35,6 +37,8 @@ const TechStack = () => {
                     <TechIcon size={60} tech="ReactJS"><GrReactjs size={30} /></TechIcon>
                     <TechIcon size={60} tech="NextJS"><RiNextjsFill size={30} /></TechIcon>
                     <TechIcon size={60} tech="Tailwind CSS"><RiTailwindCssFill size={30} /></TechIcon>
+                    <TechIcon size={60} tech="HTML5"><FaHtml5 size={30} /></TechIcon>
+                    <TechIcon size={60} tech="CSS3"><FaCss3 size={30} /></TechIcon>
                 </Section>
 
                 {/* Databases */}
@@ -57,8 +61,11 @@ const TechStack = () => {
 // Reusable Section Component
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
     <div className="w-full">
-        <h2 className="text-lg font-semibold italic mb-2">{title}</h2>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3">
+        <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
+            <span className="inline-block w-1 h-6 bg-blue-600 mr-3"></span>
+            {title}
+        </h2>
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
             {children}
         </div>
     </div>

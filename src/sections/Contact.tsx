@@ -3,7 +3,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <div className="w-full flex flex-col items-center mt-4 bg-royal-blue-solid p-4 rounded-lg shadow-lg">
+        <div className="w-full flex flex-col items-center mt-4">
             <h1 className="text-3xl font-bold">Contact Me:</h1>
             <div className="w-full md:w-[50%] flex justify-center items-center mt-4">
                 <a href="https://www.linkedin.com/in/timmytram/" target="_blank" rel="noopener noreferrer">
