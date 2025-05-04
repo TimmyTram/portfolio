@@ -12,18 +12,21 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl, slug }) => {
 
     return (
         <div
-            className="max-w-md w-full h-full mb-6 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border-6 border-royal-gold-solid cursor-pointer"
-            onClick={() => navigate(`/project/${slug}`)}
+            className="max-w-md w-full h-full mb-6 rounded-lg overflow-hidden shadow-lg border-6 border-royal-gold-solid cursor-pointer hover:scale-103 transition-transform duration-300 ease-in-out"
+            onClick={() => {
+                navigate(`/project/${slug}`)
+                window.scrollTo(0, 0)
+            }}
         >
             <div className="h-48 overflow-hidden">
                 <img
                     src={imageUrl}
                     alt={title}
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-center border-b-6 border-royal-gold-solid"
                 />
             </div>
 
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-5 h-full">
+            <div className="bg-gradient-to-tr from-regal-gray-opacity to-royal-blue-solid rounded-lg p-5 h-full">
                 <h2 className="text-xl font-bold text-white mb-2">{title}</h2>
                 <p className="text-blue-100 text-sm">{description}</p>
 

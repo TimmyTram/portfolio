@@ -163,10 +163,9 @@ const ProjectDetails = () => {
               {project.technologies.map((tech, index) => (
                 techIconMap[tech] && (
                   <div key={index} className="flex flex-col items-center rounded-lg p-3 hover:shadow-md transition-shadow">
-                    <TechIcon tech={tech} size={48}>
+                    <TechIcon tech={tech} size={60}>
                       {techIconMap[tech]}
                     </TechIcon>
-                    <span className="mt-2 text-sm text-white text-center">{tech}</span>
                   </div>
                 )
               ))}

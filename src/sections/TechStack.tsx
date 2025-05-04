@@ -5,6 +5,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { GrReactjs, GrMysql } from "react-icons/gr";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { DiPhotoshop } from "react-icons/di";
+import { techIconMap } from "../constants/techIconMaps";
 
 const TechStack = () => {
     return (
@@ -19,39 +20,39 @@ const TechStack = () => {
             <div className="space-y-8">
                 {/* Languages */}
                 <Section title="Languages">
-                    <TechIcon size={60} tech="Java"><FaJava size={30} /></TechIcon>
-                    <TechIcon size={60} tech="Python"><FaPython size={30} /></TechIcon>
-                    <TechIcon size={60} tech="TypeScript"><SiTypescript size={30} /></TechIcon>
-                    <TechIcon size={60} tech="JavaScript"><IoLogoJavascript size={30} /></TechIcon>
+                    <TechIcon size={60} tech="Java">{techIconMap['Java']}</TechIcon>
+                    <TechIcon size={60} tech="Python">{techIconMap['Python']}</TechIcon>
+                    <TechIcon size={60} tech="TypeScript">{techIconMap['TypeScript']}</TechIcon>
+                    <TechIcon size={60} tech="JavaScript">{techIconMap['JavaScript']}</TechIcon>
                 </Section>
 
                 {/* Backend */}
                 <Section title="Backend">
-                    <TechIcon size={60} tech="Spring Boot"><SiSpringboot size={30} /></TechIcon>
-                    <TechIcon size={60} tech="ExpressJS"><SiExpress size={30} /></TechIcon>
-                    <TechIcon size={60} tech="NodeJS"><FaNodeJs size={30} /></TechIcon>
+                    <TechIcon size={60} tech="Spring Boot">{techIconMap['Spring Boot']}</TechIcon>
+                    <TechIcon size={60} tech="ExpressJS">{techIconMap['ExpressJS']}</TechIcon>
+                    <TechIcon size={60} tech="NodeJS">{techIconMap['NodeJS']}</TechIcon>
                 </Section>
 
                 {/* Frontend */}
                 <Section title="Frontend">
-                    <TechIcon size={60} tech="ReactJS"><GrReactjs size={30} /></TechIcon>
-                    <TechIcon size={60} tech="NextJS"><RiNextjsFill size={30} /></TechIcon>
-                    <TechIcon size={60} tech="Tailwind CSS"><RiTailwindCssFill size={30} /></TechIcon>
-                    <TechIcon size={60} tech="HTML5"><FaHtml5 size={30} /></TechIcon>
-                    <TechIcon size={60} tech="CSS3"><FaCss3 size={30} /></TechIcon>
+                    <TechIcon size={60} tech="ReactJS">{techIconMap['ReactJS']}</TechIcon>
+                    <TechIcon size={60} tech="NextJS">{techIconMap['NextJS']}</TechIcon>
+                    <TechIcon size={60} tech="Tailwind CSS">{techIconMap['Tailwind CSS']}</TechIcon>
+                    <TechIcon size={60} tech="HTML5">{techIconMap['HTML5']}</TechIcon>
+                    <TechIcon size={60} tech="CSS3">{techIconMap['CSS3']}</TechIcon>
                 </Section>
 
                 {/* Databases */}
                 <Section title="Databases">
-                    <TechIcon size={60} tech="MySQL"><GrMysql size={30} /></TechIcon>
-                    <TechIcon size={60} tech="PostgreSQL"><SiPostgresql size={30} /></TechIcon>
-                    <TechIcon size={60} tech="MongoDB"><SiMongodb size={30} /></TechIcon>
+                    <TechIcon size={60} tech="MySQL">{techIconMap['MySQL']}</TechIcon>
+                    <TechIcon size={60} tech="PostgreSQL">{techIconMap['PostgreSQL']}</TechIcon>
+                    <TechIcon size={60} tech="MongoDB">{techIconMap['MongoDB']}</TechIcon>
                 </Section>
 
                 {/* Tools */}
                 <Section title="Tools">
-                    <TechIcon size={60} tech="Git"><FaGitAlt size={30} /></TechIcon>
-                    <TechIcon size={60} tech="Photoshop"><DiPhotoshop size={30} /></TechIcon>
+                    <TechIcon size={60} tech="Git">{techIconMap['Git']}</TechIcon>
+                    <TechIcon size={60} tech="Photoshop">{techIconMap['Photoshop']}</TechIcon>
                 </Section>
             </div>
         </>
