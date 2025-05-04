@@ -1,19 +1,18 @@
+import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Layout from './layout/Layout'
-import About from './sections/About'
-import Contact from './sections/Contact'
-import Education from './sections/Education'
-import TechStack from './sections/TechStack'
+import Home from './pages/Home'
+import ProjectDetails from './pages/ProjectDetails'
 
 function App() {
   return (
     <>
       <Navbar />
       <Layout>
-        <About />
-        <Contact />
-        <Education />
-        <TechStack />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project/:slug" element={<ProjectDetails />} />
+        </Routes>
       </Layout>
     </>
   )

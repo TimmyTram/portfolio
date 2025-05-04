@@ -10,7 +10,7 @@ const Navbar = () => {
         <nav className="
             sticky top-0 z-50 w-full backdrop-blur flex 
             justify-between items-center 
-            bg-navbar border-b-4 p-6 text-white"
+            bg-navbar border-b-4 border-royal-gold-solid p-6 text-white"
         >
             <p className="font-bold text-xl">Timmy Tram</p>
 

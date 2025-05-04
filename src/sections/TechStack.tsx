@@ -9,7 +9,7 @@ import { DiPhotoshop } from "react-icons/di";
 const TechStack = () => {
     return (
         <div className="w-full flex flex-col items-center mt-4 bg-royal-blue-solid p-4 rounded-lg shadow-md">
-            <h1 className="text-2xl font-bold mb-4">Tech Stack</h1>
+            <h1 className="text-2xl font-bold mb-4">Tech Stack:</h1>
 
             {/* Grouped Tech */}
             <div className="w-full space-y-4">
