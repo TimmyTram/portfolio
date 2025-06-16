@@ -31,7 +31,6 @@ const About = () => {
                                 <p className="text-white leading-relaxed text-lg">
                                     👋 Hello my name is <strong>Timmy Tram</strong>.
                                     <br />
-                                    An aspiring full-stack developer from San Francisco, California. I have a passion for creating web application and enjoy working on both the frontend and backend. I am always eager to learn new technologies and improve my skills.
                                 </p>
                             </section>
 
